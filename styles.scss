@@ -1,12 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import '~bootstrap/dist/css/bootstrap.min.css';
 
 body{
-    background: #243523;
+    background:white;
     padding: 3em;
     font-family: 'Raleway', 'Arial';
-    color: #fff;
+    color: #2c2c2c;
 
     ul{
         list-style-type: none;
@@ -15,7 +16,7 @@ body{
     }
 
     ul li{
-        display: inline;
+
         margin-right: 30px;
     }
 
@@ -26,5 +27,14 @@ body{
     a{
         color: #fff;
         text-decoration: none;
+        cursor: pointer;
     }
+    .subnav{
+        margin-top: 50px;
+    }
+
+     .is-active {
+        color : #e48eff   !important;
+        background-color:none;
+      }
 }

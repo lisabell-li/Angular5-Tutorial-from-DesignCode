@@ -1,8 +1,32 @@
+<h2>The BucketList Generator</h2>
 <p>
-  about works!
-  <a (click)="sendMeHome()"><strong>Take me back</strong></a>
+  Generate your own BucketList with this website. Add things you want to do before you die.</p>
+  <p>This code was just written to practice Angular 5 and is based on the great Angular tutorial "Learn Angular 5 in less than 60 Minutes - Free Beginner's Course" from coursetro.com. https://www.youtube.com/watch?v=oa9cnWTpqP8</p>
+  <p>
+  <a (click)="sendMeHome()"><strong>Back to Home</strong></a>
 </p>
 
-<ul>
-  <li *ngFor="let goal of goals">{{goal}}</li>
-</ul>
+
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h2 class="modal-title">My BucketList</h2>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+
+      <div >
+      
+        <ul>
+          <li *ngFor="let goal of goals">{{goal}}</li>
+        </ul>
+      </div>
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Save</button>
+  </div>
+</ng-template>
+
+<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Show my bucketlist</button>

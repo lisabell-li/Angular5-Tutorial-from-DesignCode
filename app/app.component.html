@@ -1,6 +1,21 @@
 
-<ul>
-  <li><a routerLink="">Home</a></li>
-  <li><a routerLink="about/48">About</a></li>
-</ul>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">BucketList Generator</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="is-active">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about/48" routerLinkActive="is-active">About</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+<div class="subnav"></div>
+
 <router-outlet></router-outlet>

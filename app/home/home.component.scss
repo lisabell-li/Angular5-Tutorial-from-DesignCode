@@ -8,25 +8,40 @@
 }
 
 .color-dark{
-    background: #2885CD;
+    background: #8f9da0;
+  
 }
 
 .color-light{
-background: #57B3F7
+background: #E48EFF;
+padding-top: 5px;
+}
+
+.life-container{
+    background-color: white;
+    color: #2c2c2c;
+    padding: 5px;
+  
 }
 
 input.txt{
     border: 0;
     padding: 1em;
     width: 80%;
-    margin-bottom: 2em;
+    margin-bottom: 5px;
 }
 
 input.btn{
     border: 0;
     display: block;
-    padding: 1em 3em;
+  
     cursor: pointer;
     color: white;
-    background-color: #42a242;
+    background-color: #8f9da0;
+}
+
+.delete-goal{
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
 }
